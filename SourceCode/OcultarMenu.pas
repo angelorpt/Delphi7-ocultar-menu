@@ -45,23 +45,27 @@ end;
 // --------------
 
 procedure TfrmMenu.btnOKClick(Sender: TObject);
+var
+  nomeItem: String;
 begin
 
   // MainMenu1 - Nomo do componente Menu
 
+  nomeItem := "Salvar";
+
   if opt_Visible.Checked = True then begin
     if opt_True.Checked = True then begin
-      itemMenu_VE(MainMenu1, txt_Botao.Text, 1, True);
+      itemMenu_VE(MainMenu1, nomeItem, 1, True);
     end else begin
-      itemMenu_VE(MainMenu1, txt_Botao.Text, 1, False);
+      itemMenu_VE(MainMenu1, nomeItem, 1, False);
     end;
   end;
 
   if opt_Enabled.Checked = True then begin
     if opt_True.Checked = True then begin
-      itemMenu_VE(MainMenu1, txt_Botao.Text, 2, True);
+      itemMenu_VE(MainMenu1, nomeItem, 2, True);
     end else begin
-      itemMenu_VE(MainMenu1, txt_Botao.Text, 2, False);
+      itemMenu_VE(MainMenu1, nomeItem, 2, False);
     end;
   end;
 
