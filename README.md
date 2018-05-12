@@ -1,4 +1,4 @@
-# Delphi-ocultar-menu
+# Delphi Ocultar/Desabilitar Menu
 
 Este projeto foi desenvolvido em Delphi 7.
 
